@@ -3,28 +3,28 @@ using System.Windows.Forms;
 
 namespace ClinicManagement
 {
-    public partial class FrmAddBimar : Form
+    public partial class FrmAddPatient : Form
     {
-        public FrmAddBimar()
+        public FrmAddPatient()
         {
             InitializeComponent();
         }
 
-        private void FrmAddBimar_Load(object sender, EventArgs e)
+        private void FrmAddPatient_Load(object sender, EventArgs e)
         {
            
         }
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            Bimar bimar = new Bimar();
-            bimar.FirstName = txtName.Text;
-            bimar.LastName = txtLastName.Text;
-            bimar.NationalCode = txtNationalCode.Text;
-            bimar.MobileNumber = txtMobileNumber.Text;
+            Patient Patient = new Patient();
+            Patient.FirstName = txtName.Text;
+            Patient.LastName = txtLastName.Text;
+            Patient.NationalCode = txtNationalCode.Text;
+            Patient.MobileNumber = txtMobileNumber.Text;
 
-            BimarManager bimarManager = new BimarManager();
-            bimarManager.AddBimar(bimar);
+            PatientManager PatientManager = new PatientManager();
+            PatientManager.AddPatient(Patient);
         }
 
     }

@@ -4,30 +4,30 @@ using System.Windows.Forms;
 
 namespace ClinicManagement
 {
-    public partial class FrmBimaran : Form
+    public partial class FrmPatients : Form
     {
-        public FrmBimaran()
+        public FrmPatients()
         {
             InitializeComponent();
         }
 
-        private void FrmBimar_Load(object sender, EventArgs e)
+        private void FrmPatient_Load(object sender, EventArgs e)
         {
 
         }
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            FrmAddBimar frm = new FrmAddBimar();
+            FrmAddPatient frm = new FrmAddPatient();
 
             frm.ShowDialog();
-            BimarManager bimarManager = new BimarManager();
-            dgvBimar.DataSource = bimarManager.GetBimaran().ToList();
+            PatientManager PatientManager = new PatientManager();
+            dgvPatient.DataSource = PatientManager.GetPatients().ToList();
         }
 
-        private void dgvBimar_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvPatient_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.ColumnIndex == dgvBimar.Columns["ColDelete"].Index)
+            if (e.ColumnIndex == dgvPatient.Columns["ColDelete"].Index)
             {
                 MessageBox.Show(e.RowIndex.ToString());
             }

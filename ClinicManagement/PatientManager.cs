@@ -2,21 +2,21 @@
 
 namespace ClinicManagement
 {
-    internal class BimarManager
+    internal class PatientManager
     {
-        private static List<Bimar> bimaran;
+        private static List<Patient> Patients;
 
-        public List<Bimar> GetBimaran()
+        public List<Patient> GetPatients()
         {
-            return bimaran;
+            return Patients;
         }
 
-        public void AddBimar(Bimar bimar)
+        public void AddPatient(Patient Patient)
         {
-            if (bimaran == null)
-                bimaran = new List<Bimar>();
+            if (Patients == null)
+                Patients = new List<Patient>();
 
-            bimaran.Add(bimar);
+            Patients.Add(Patient);
         }
     }
 }

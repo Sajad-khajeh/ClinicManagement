@@ -1,6 +1,6 @@
 ﻿namespace ClinicManagement
 {
-    partial class FrmBimaran
+    partial class FrmPatients
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.dgvBimar = new System.Windows.Forms.DataGridView();
+            this.dgvPatient = new System.Windows.Forms.DataGridView();
             this.FirstName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NationalCode = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -38,17 +38,17 @@
             this.ColDelete = new System.Windows.Forms.DataGridViewButtonColumn();
             this.btnAdd = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBimar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatient)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvBimar
+            // dgvPatient
             // 
-            this.dgvBimar.AllowUserToAddRows = false;
-            this.dgvBimar.AllowUserToDeleteRows = false;
-            this.dgvBimar.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            this.dgvPatient.AllowUserToAddRows = false;
+            this.dgvPatient.AllowUserToDeleteRows = false;
+            this.dgvPatient.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvBimar.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvBimar.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvPatient.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPatient.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.FirstName,
             this.NationalCode,
             this.LastName,
@@ -56,14 +56,14 @@
             this.MobileNumber,
             this.ColEdit,
             this.ColDelete});
-            this.dgvBimar.Location = new System.Drawing.Point(12, 74);
-            this.dgvBimar.Name = "dgvBimar";
-            this.dgvBimar.ReadOnly = true;
-            this.dgvBimar.RowHeadersWidth = 51;
-            this.dgvBimar.RowTemplate.Height = 24;
-            this.dgvBimar.Size = new System.Drawing.Size(776, 364);
-            this.dgvBimar.TabIndex = 0;
-            this.dgvBimar.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvBimar_CellContentClick);
+            this.dgvPatient.Location = new System.Drawing.Point(12, 74);
+            this.dgvPatient.Name = "dgvPatient";
+            this.dgvPatient.ReadOnly = true;
+            this.dgvPatient.RowHeadersWidth = 51;
+            this.dgvPatient.RowTemplate.Height = 24;
+            this.dgvPatient.Size = new System.Drawing.Size(776, 364);
+            this.dgvPatient.TabIndex = 0;
+            this.dgvPatient.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvPatient_CellContentClick);
             // 
             // FirstName
             // 
@@ -147,25 +147,25 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // FrmBimaran
+            // FrmPatients
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnAdd);
-            this.Controls.Add(this.dgvBimar);
-            this.Name = "FrmBimaran";
-            this.Text = "FrmBimar";
-            this.Load += new System.EventHandler(this.FrmBimar_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvBimar)).EndInit();
+            this.Controls.Add(this.dgvPatient);
+            this.Name = "FrmPatients";
+            this.Text = "FrmPatient";
+            this.Load += new System.EventHandler(this.FrmPatient_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPatient)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvBimar;
+        private System.Windows.Forms.DataGridView dgvPatient;
         private System.Windows.Forms.Button btnAdd;
         private System.Windows.Forms.DataGridViewTextBoxColumn FirstName;
         private System.Windows.Forms.DataGridViewTextBoxColumn NationalCode;

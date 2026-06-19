@@ -48,11 +48,11 @@
   <ItemGroup>
     <Compile Include="Patient.cs" />
     <Compile Include="PatientManager.cs" />
-    <Compile Include="FrmAddPatient.cs">
+    <Compile Include="FrmPatient.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="FrmAddPatient.Designer.cs">
-      <DependentUpon>FrmAddPatient.cs</DependentUpon>
+    <Compile Include="FrmPatient.Designer.cs">
+      <DependentUpon>FrmPatient.cs</DependentUpon>
     </Compile>
     <Compile Include="FrmPatients.cs">
       <SubType>Form</SubType>
@@ -62,8 +62,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="FrmAddPatient.resx">
-      <DependentUpon>FrmAddPatient.cs</DependentUpon>
+    <EmbeddedResource Include="FrmPatient.resx">
+      <DependentUpon>FrmPatient.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FrmPatients.resx">
       <DependentUpon>FrmPatients.cs</DependentUpon>
