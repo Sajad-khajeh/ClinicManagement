@@ -34,10 +34,10 @@
             this.LastName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.FullName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.MobileNumber = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnAdd = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.ColEdit = new System.Windows.Forms.DataGridViewButtonColumn();
             this.ColDelete = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvBimar)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +112,22 @@
             this.MobileNumber.ReadOnly = true;
             this.MobileNumber.Width = 125;
             // 
+            // ColEdit
+            // 
+            this.ColEdit.HeaderText = "ویرایش";
+            this.ColEdit.MinimumWidth = 6;
+            this.ColEdit.Name = "ColEdit";
+            this.ColEdit.ReadOnly = true;
+            this.ColEdit.Width = 125;
+            // 
+            // ColDelete
+            // 
+            this.ColDelete.HeaderText = "حذف";
+            this.ColDelete.MinimumWidth = 6;
+            this.ColDelete.Name = "ColDelete";
+            this.ColDelete.ReadOnly = true;
+            this.ColDelete.Width = 125;
+            // 
             // btnAdd
             // 
             this.btnAdd.Location = new System.Drawing.Point(12, 12);
@@ -130,22 +146,6 @@
             this.button1.TabIndex = 2;
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
-            // 
-            // ColEdit
-            // 
-            this.ColEdit.HeaderText = "ویرایش";
-            this.ColEdit.MinimumWidth = 6;
-            this.ColEdit.Name = "ColEdit";
-            this.ColEdit.ReadOnly = true;
-            this.ColEdit.Width = 125;
-            // 
-            // ColDelete
-            // 
-            this.ColDelete.HeaderText = "حذف";
-            this.ColDelete.MinimumWidth = 6;
-            this.ColDelete.Name = "ColDelete";
-            this.ColDelete.ReadOnly = true;
-            this.ColDelete.Width = 125;
             // 
             // FrmBimaran
             // 
