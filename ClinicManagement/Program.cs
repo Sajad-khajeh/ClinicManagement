@@ -16,6 +16,7 @@ namespace WindowsFormsApp5
         static void Main()
         {
             //req
+            //my newchanges
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new FrmPatients());
